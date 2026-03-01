@@ -1,5 +1,7 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
     <application
+        android:requestLegacyExternalStorage="true"
         android:label="xpos_camera"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
@@ -56,5 +58,6 @@
     <!-- Android 9 이하 일부 기기 대응 -->
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="29" />
+        android:maxSdkVersion="29"
+        tools:replace="android:maxSdkVersion" />
 </manifest>
