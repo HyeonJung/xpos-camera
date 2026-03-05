@@ -43,6 +43,7 @@ dependencies:
   path_provider: ^2.1.5
   share_plus: ^12.0.1
   gal: ^2.0.0
+  sensors_plus: ^6.0.0
 
 dev_dependencies:
   flutter_test:
@@ -105,6 +106,7 @@ flutter:
 flutter_launcher_icons:
   android: true
   ios: true
+  remove_alpha_ios: true
   image_path: "assets/icon.png"
-  adaptive_icon_background: "#000000"
-  adaptive_icon_foreground: "assets/icon.png"
+  adaptive_icon_background: "#101D33"
+  adaptive_icon_foreground: "assets/icon_foreground.png"
